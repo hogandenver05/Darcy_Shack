@@ -1,0 +1,61 @@
+@import url(mainstyles.css);
+* {
+    box-sizing: border-box;
+}
+div.header img {
+    padding-top: 40px;
+    padding-left: 60px;
+    float: left;
+}
+.header {
+    font-size: 30px;
+    padding: 80px;
+    text-align: right;
+    padding-right: 300px;
+    background: linear-gradient(to bottom, #ffff99 28%, #ff66ff 132%);
+    color: black;
+}
+@-webkit-keyframes shimmer {
+    100% {
+        mask-position: left
+    }
+}
+@keyframes shimmer {
+    100% {
+        mask-position: left
+    }
+}
+.shimmer {
+    -webkit-mask: linear-gradient(-60deg, #000 30%, #0009, #000 70%) right/350% 100%;
+    -webkit-animation: shimmer 3s;
+    mask: linear-gradient(-60deg, #000 30%, #0009, #000 70%) right/350% 100%;
+    animation: shimmer 3s;
+}
+.container {
+    text-align: center;
+}
+.content {
+    display: flex;
+    flex-direction: column; /* Or row, depending on desired layout */
+    text-align: center; 
+}
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+.side h2 {
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+}
+.side {
+    flex: 0 0 30%; /* Explicitly define flex-basis */
+    padding: 20px;
+    background-color: #f1f1f1;
+    text-align: justify;
+}
+.main {
+    flex: 0 0 70%; /* Explicitly define flex-basis */
+    align-items: center; /* Ensure cross-axis alignment */
+}

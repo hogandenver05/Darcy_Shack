@@ -1,0 +1,15 @@
+@import url(mainstyles.css);
+#navbar {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+div.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 750px;
+    color: white;
+}

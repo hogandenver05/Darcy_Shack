@@ -1,0 +1,92 @@
+@import url(mainstyles.css);
+/* improve layout */
+#navbar {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+div.main {
+    padding-top: 50px;
+}
+.product-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    background-color: #eeeeee;
+}
+.product-image {
+    max-width: 300px;
+    margin-right: 30px;
+    border-radius: 15px;
+}
+.product-info {
+    max-width: 600px;
+}
+.product-info h1 {
+    font-size: xx-large;
+    color: #333;
+}
+.product-info p {
+    font-size: medium;
+    color: #666;
+}
+.buy-button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.buy-button:hover {
+    background-color: #555;
+}
+/* Similar Products Section */
+#similar-products {
+    margin-top: 40px;
+    padding: 20px;
+}
+#similar-products h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+.products-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px 0px 50px 0px;
+}
+/* Hide scrollbar for Webkit browsers */
+.products-scroll::-webkit-scrollbar {
+    display: none;
+}
+/* For Firefox */
+.products-scroll {
+    scrollbar-width: none;
+}
+.products-scroll a {
+    text-decoration: none;
+    color: black;
+}
+.product-card {
+    width: 220px;
+    flex-shrink: 0;
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
